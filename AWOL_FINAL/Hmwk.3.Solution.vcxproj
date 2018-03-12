@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{58A3B421-0BD0-4D20-8085-99251CB47BCD}</ProjectGuid>
+    <RootNamespace>Hmwk3Solution</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Documents and Settings\Benjamin\Desktop\game programming\AWOL_FINAL;C:\Program Files\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\Microsoft DirectX SDK %28June 2010%29\Lib\x86;C:\Documents and Settings\Benjamin\Desktop\game programming\AWOL_FINAL\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d9.lib;d3dx9.lib;dinput8.lib;dxguid.lib;Box2D.lib;dsound.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ArtAssetLibrary.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="BulletFactory.cpp" />
+    <ClCompile Include="Carrier.cpp" />
+    <ClCompile Include="CarrierFactory.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameAssetLibrary.cpp" />
+    <ClCompile Include="GamePhysics.cpp" />
+    <ClCompile Include="GameSound.cpp" />
+    <ClCompile Include="GameSoundBuffer.cpp" />
+    <ClCompile Include="GameSprite.cpp" />
+    <ClCompile Include="GraphicsDevice.cpp" />
+    <ClCompile Include="Helicopter.cpp" />
+    <ClCompile Include="HelicopterFactory.cpp" />
+    <ClCompile Include="Infantry.cpp" />
+    <ClCompile Include="InfantryFactory.cpp" />
+    <ClCompile Include="InputDevice.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MusicManager.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="PhysicsAssetLibrary.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerFactory.cpp" />
+    <ClCompile Include="PlayerTurret.cpp" />
+    <ClCompile Include="Rock.cpp" />
+    <ClCompile Include="RockFactory.cpp" />
+    <ClCompile Include="Rotor.cpp" />
+    <ClCompile Include="SoundDevice.cpp" />
+    <ClCompile Include="SoundLibrary.cpp" />
+    <ClCompile Include="Tank.cpp" />
+    <ClCompile Include="TankFactory.cpp" />
+    <ClCompile Include="Tent.cpp" />
+    <ClCompile Include="TentFactory.cpp" />
+    <ClCompile Include="tinystr.cpp" />
+    <ClCompile Include="tinyxml.cpp" />
+    <ClCompile Include="tinyxmlerror.cpp" />
+    <ClCompile Include="tinyxmlparser.cpp" />
+    <ClCompile Include="Tree.cpp" />
+    <ClCompile Include="TreeFactory.cpp" />
+    <ClCompile Include="Turret.cpp" />
+    <ClCompile Include="View.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArtAssetLibrary.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="BulletFactory.h" />
+    <ClInclude Include="Carrier.h" />
+    <ClInclude Include="CarrierFactory.h" />
+    <ClInclude Include="Definitions.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameAssetLibrary.h" />
+    <ClInclude Include="GameContactListener.h" />
+    <ClInclude Include="GamePhysics.h" />
+    <ClInclude Include="GameSound.h" />
+    <ClInclude Include="GameSoundBuffer.h" />
+    <ClInclude Include="GameSprite.h" />
+    <ClInclude Include="GraphicsDevice.h" />
+    <ClInclude Include="Helicopter.h" />
+    <ClInclude Include="HelicopterFactory.h" />
+    <ClInclude Include="Infantry.h" />
+    <ClInclude Include="InfantryFactory.h" />
+    <ClInclude Include="InputDevice.h" />
+    <ClInclude Include="log.h" />
+    <ClInclude Include="MusicManager.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="ObjectFactory.h" />
+    <ClInclude Include="ObjectInstruction.h" />
+    <ClInclude Include="PhysicsAssetLibrary.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerFactory.h" />
+    <ClInclude Include="PlayerTurret.h" />
+    <ClInclude Include="Rock.h" />
+    <ClInclude Include="RockFactory.h" />
+    <ClInclude Include="Rotor.h" />
+    <ClInclude Include="SoundDevice.h" />
+    <ClInclude Include="SoundLibrary.h" />
+    <ClInclude Include="Tank.h" />
+    <ClInclude Include="TankFactory.h" />
+    <ClInclude Include="Tent.h" />
+    <ClInclude Include="TentFactory.h" />
+    <ClInclude Include="tinystr.h" />
+    <ClInclude Include="tinyxml.h" />
+    <ClInclude Include="Tree.h" />
+    <ClInclude Include="TreeFactory.h" />
+    <ClInclude Include="Turret.h" />
+    <ClInclude Include="View.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\bulletSound.wav" />
+    <None Include="Sounds\carrierDead1.wav" />
+    <None Include="Sounds\infDead.wav" />
+    <None Include="Sounds\my10am.wav" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

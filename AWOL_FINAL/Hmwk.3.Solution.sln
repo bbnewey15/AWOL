@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hmwk.3.Solution", "Hmwk.3.Solution.vcxproj", "{58A3B421-0BD0-4D20-8085-99251CB47BCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58A3B421-0BD0-4D20-8085-99251CB47BCD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{58A3B421-0BD0-4D20-8085-99251CB47BCD}.Debug|Win32.Build.0 = Debug|Win32
+		{58A3B421-0BD0-4D20-8085-99251CB47BCD}.Release|Win32.ActiveCfg = Release|Win32
+		{58A3B421-0BD0-4D20-8085-99251CB47BCD}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

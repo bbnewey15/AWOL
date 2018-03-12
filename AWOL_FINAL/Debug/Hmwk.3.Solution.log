@@ -1,0 +1,74 @@
+﻿Build started 5/5/2014 11:37:43 PM.
+     1>Project "C:\Documents and Settings\Benjamin\Desktop\game programming\AWOL_FINAL\Hmwk.3.Solution.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Hmwk.3.Solution.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp Main.cpp PlayerTurret.cpp
+         PlayerTurret.cpp
+         Generating Code...
+         Compiling...
+         Game.cpp
+     1>c:\documents and settings\benjamin\desktop\game programming\awol_final\game.cpp(311): warning C4244: '=' : conversion from 'float32' to 'GAME_INT', possible loss of data
+     1>c:\documents and settings\benjamin\desktop\game programming\awol_final\game.cpp(401): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>c:\documents and settings\benjamin\desktop\game programming\awol_final\game.cpp(410): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>c:\documents and settings\benjamin\desktop\game programming\awol_final\game.cpp(419): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         Main.cpp
+       Link:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Documents and Settings\Benjamin\Desktop\game programming\AWOL_FINAL\Debug\Hmwk.3.Solution.exe" /NOLOGO d3d9.lib d3dx9.lib dinput8.lib dxguid.lib Box2D.lib dsound.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Hmwk.3.Solution.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Documents and Settings\Benjamin\Desktop\game programming\AWOL_FINAL\Debug\Hmwk.3.Solution.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Documents and Settings\Benjamin\Desktop\game programming\AWOL_FINAL\Debug\Hmwk.3.Solution.lib" /MACHINE:X86 Debug\ArtAssetLibrary.obj
+         Debug\Bullet.obj
+         Debug\BulletFactory.obj
+         Debug\Carrier.obj
+         Debug\CarrierFactory.obj
+         Debug\Game.obj
+         Debug\GameAssetLibrary.obj
+         Debug\GamePhysics.obj
+         Debug\GameSound.obj
+         Debug\GameSoundBuffer.obj
+         Debug\GameSprite.obj
+         Debug\GraphicsDevice.obj
+         Debug\Helicopter.obj
+         Debug\HelicopterFactory.obj
+         Debug\Infantry.obj
+         Debug\InfantryFactory.obj
+         Debug\InputDevice.obj
+         Debug\Main.obj
+         Debug\MusicManager.obj
+         Debug\Object.obj
+         Debug\PhysicsAssetLibrary.obj
+         Debug\Player.obj
+         Debug\PlayerFactory.obj
+         Debug\PlayerTurret.obj
+         Debug\Rock.obj
+         Debug\RockFactory.obj
+         Debug\Rotor.obj
+         Debug\SoundDevice.obj
+         Debug\SoundLibrary.obj
+         Debug\Tank.obj
+         Debug\TankFactory.obj
+         Debug\Tent.obj
+         Debug\TentFactory.obj
+         Debug\tinystr.obj
+         Debug\tinyxml.obj
+         Debug\tinyxmlerror.obj
+         Debug\tinyxmlparser.obj
+         Debug\Tree.obj
+         Debug\TreeFactory.obj
+         Debug\Turret.obj
+         Debug\View.obj
+         LINK : C:\Documents and Settings\Benjamin\Desktop\game programming\AWOL_FINAL\Debug\Hmwk.3.Solution.exe not found or not built by the last incremental link; performing full link
+         Hmwk.3.Solution.vcxproj -> C:\Documents and Settings\Benjamin\Desktop\game programming\AWOL_FINAL\Debug\Hmwk.3.Solution.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Documents and Settings\Benjamin\Desktop\game programming\AWOL_FINAL\Debug\Hmwk.3.Solution.exe;#1" /manifest Debug\Hmwk.3.Solution.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\Hmwk.3.Solution.unsuccessfulbuild".
+         Touching "Debug\Hmwk.3.Solution.lastbuildstate".
+     1>Done Building Project "C:\Documents and Settings\Benjamin\Desktop\game programming\AWOL_FINAL\Hmwk.3.Solution.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.68
