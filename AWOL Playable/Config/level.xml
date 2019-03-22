@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<Level>
+	<Resources>
+		<Factories>
+			<Factory type="Infantry"/>
+			<Factory type="Rock"/>
+			<Factory type="Carrier"/>
+			<Factory type="Tank"/>
+			<Factory type="Player"/>
+			<Factory type="Bullet"/>
+			<Factory type="Tree"/>
+			<Factory type="Helicopter"/>
+			<Factory type="Tent"/>
+		</Factories>
+		<Sprites>
+			<Sprite name="Infantry" file = "./Images/t_infantry.png" width="16" height="27"/>
+			<Sprite name="Injured" file = "./Images/t_player.png" width="16" height="27"/>
+			<Sprite name="Rock" file = "./Images/t_rock.png" width="29" height="29"/>
+			<Sprite name="Carrier" file = "./Images/t_carrier.png" width="25" height="42"/>
+			<Sprite name="Tank" file = "./Images/t_tank.png" width="45" height="47"/>
+			<Sprite name="Turret" file = "./Images/t_turret.png" width="45" height="47"/>
+			<Sprite name="PlayerTurret" file = "./Images/t_turret.png" width="45" height="47"/>
+			<Sprite name="Player" file = "./Images/t_tank.png" width="45" height="47"/>
+			<Sprite name="Bullet" file = "./Images/t_bullet.png" width="6" height="6"/>
+			<Sprite name="Skull" file = "./Images/t_skull.png" width="19" height="30"/>
+			<Sprite name="Rubble" file = "./Images/t_rubble.png" width="25" height="42"/>
+			<Sprite name="Tree" file = "./Images/t_tree.png" width="100" height="100"/>
+			<Sprite name="Rotor" file = "./Images/rotor.png" width="97" height="97"/>
+			<Sprite name="Helicopter" file = "./Images/apache.png" width="53" height="125"/>
+			<Sprite name="Tent" file = "./Images/t_tent.png" width="80" height="100"/>
+		</Sprites>
+		<PhysicsDefinitions>
+			<Definition name="PlayerTurret" type="dynamic" shape="poly" density="2.0f" restitution="0.9f" angDamp="4.0f" linDamp="5.0f" angForce="0.2f" linForce="0.0f"/>
+			<Definition name="Turret" type="dynamic" shape="poly" density="2.0f" restitution="0.9f" angDamp="4.0f" linDamp="5.0f" angForce="0.0f" linForce="0.0f"/>
+			<Definition name="Tank" type="dynamic" shape="poly" density="20.0f" restitution="0.9f" angDamp="4.0f" linDamp="5.0f" angForce="0.01f" linForce="4.0f"/>
+			<Definition name="Carrier" type="dynamic" shape="poly" density="13.0f" restitution="0.9f" angDamp="4.0f" linDamp="10.0f" angForce="0.02f" linForce="2.0f"/>
+			<Definition name="Infantry" type="dynamic" shape="circle" density="1.0f" restitution="0.3f" angDamp="10.0f" linDamp="3.0f" angForce="0.05f" linForce="0.01f"/>
+			<Definition name="Rock" type="dynamic" shape="poly" density="100.0f" restitution="0.8f" angDamp="0.9f" linDamp="10.0f" angForce="0.0f" linForce="0.0f"/>
+			<Definition name="Bullet" type="dynamic" shape="circle" density="0.01f" restitution="0.99f" angDamp="0.0f" linDamp="0.0f" angForce="0.0f" linForce="0.02f"/>
+			<Definition name="Player" type="dynamic" shape="poly" density="20.0f" restitution="0.9f" angDamp="10.0f" linDamp="5.0f" angForce="0.5f" linForce="7.2f"/>
+			<Definition name="Tree" type="static" shape="circle" density="0.5f" restitution="0.01f" angDamp="10.0f" linDamp="3.0f" angForce="1.0f" linForce="0.2f"/>
+			<Definition name="Helicopter" type="dynamic" shape="poly" density="20.0f" restitution="0.9f" angDamp="4.0f" linDamp="5.0f" angForce="0.02f" linForce="6.0f"/>
+			<Definition name="Tent" type="static" shape="poly" density="0.5f" restitution="0.01f" angDamp="10.0f" linDamp="3.0f" angForce="1.0f" linForce="0.2f"/>
+			<Definition name="Rotor" type="dynamic" shape="poly" density="2.0f" restitution="0.9f" angDamp="0.1f" linDamp="5.0f" angForce="0.5f" linForce="0.0f"/>
+		</PhysicsDefinitions>
+	</Resources>
+	<Layout>
+    		<!-- Object Layout for Game 	-->
+   		<GameAsset name="Carrier" x="100.0f" y="-100.0f"angle="-2.0f"/>
+   		<GameAsset name="Carrier" x="0.0f" y="-200.0f"angle="2.0f"/>
+   		<GameAsset name="Carrier" x="169.0f" y="-568.0f"angle="2.0f"/>
+   		<GameAsset name="Carrier" x="50.0f" y="-700.0f"angle="2.0f"/>
+   		<GameAsset name="Carrier" x="-259.0f" y="-650.0f"angle="2.0f"/>
+   		<GameAsset name="Infantry" x="100.0f" y="-250.0f"angle="0.0f"/>
+   		<GameAsset name="Infantry" x="-25.0f" y="-100.0f"angle="2.0f"/>
+   		<GameAsset name="Infantry" x="-75.0f" y="-150.0f"angle="2.0f"/>
+   		<GameAsset name="Infantry" x="-115.0f" y="-115.0f"angle="2.0f"/>
+		<GameAsset name="Infantry" x="-52.0f" y="-94.0f"angle="2.0f"/>
+		<GameAsset name="Infantry" x="-89.0f" y="-120.0f"angle="2.0f"/>
+		<GameAsset name="Infantry" x="-115.0f" y="-115.0f"angle="2.0f"/>
+		<GameAsset name="Infantry" x="115.0f" y="-415.0f"angle="2.0f"/>
+		<GameAsset name="Infantry" x="-15.0f" y="-565.0f"angle="2.0f"/>
+		<GameAsset name="Infantry" x="-215.0f" y="-615.0f"angle="2.0f"/>
+		<GameAsset name="Infantry" x="-335.0f" y="-1115.0f"angle="2.0f"/>
+		<GameAsset name="Infantry" x="-135.0f" y="-1315.0f"angle="2.0f"/>
+		<GameAsset name="Infantry" x="305.0f" y="-1215.0f"angle="2.0f"/>
+		<GameAsset name="Infantry" x="335.0f" y="-1115.0f"angle="2.0f"/>
+		<GameAsset name="Infantry" x="-315.0f" y="-515.0f"angle="2.0f"/>
+		<GameAsset name="Infantry" x="265.0f" y="-755.0f"angle="2.0f"/>
+		<GameAsset name="Infantry" x="-175.0f" y="-715.0f"angle="2.0f"/>
+		<GameAsset name="Infantry" x="-225.0f" y="-845.0f"angle="2.0f"/>
+		<GameAsset name="Infantry" x="115.0f" y="-985.0f"angle="2.0f"/>
+		<GameAsset name="Infantry" x="415.0f" y="-1015.0f"angle="2.0f"/>
+		<GameAsset name="Infantry" x="-315.0f" y="-1215.0f"angle="2.0f"/>
+		<GameAsset name="Infantry" x="-265.0f" y="-1315.0f"angle="2.0f"/>
+		<GameAsset name="Infantry" x="175.0f" y="-1265.0f"angle="2.0f"/>
+		<GameAsset name="Infantry" x="-225.0f" y="-1345.0f"angle="2.0f"/>
+		<GameAsset name="Infantry" x="115.0f" y="-985.0f"angle="2.0f"/>
+		<GameAsset name="Tent" x="-215.0f" y="-215.0f"angle="2.0f"/>
+		<GameAsset name="Tent" x="255.0f" y="-315.0f"angle="1.0f"/>
+		<GameAsset name="Tent" x="-115.0f" y="-515.0f"angle="2.0f"/>
+		<GameAsset name="Tent" x="-215.0f" y="-815.0f"angle="2.0f"/>
+		<GameAsset name="Tent" x="297.0f" y="-715.0f"angle="2.0f"/>
+		<GameAsset name="Tent" x="205.0f" y="-1115.0f"angle="2.0f"/>
+		<GameAsset name="Tent" x="215.0f" y="-1315.0f"angle="2.0f"/>
+   		<GameAsset name="Carrier" x="-425.0f" y="-1140.0f"angle="2.0f"/>
+		<GameAsset name="Carrier" x="-325.0f" y="-1240.0f"angle="2.0f"/>
+		<GameAsset name="Carrier" x="225.0f" y="-1240.0f"angle="2.0f"/>
+    		<GameAsset name="Player" x="0.0f" y="100.0f"angle="0.0f"/>
+   		<GameAsset name="Rock" x="150.0f" y="-80.0f"angle="2.0f"/>
+   		<GameAsset name="Rock" x="155.0f" y="-70.0f"angle="2.9f"/>
+		<GameAsset name="Helicopter" x="0.0f" y="-1540.0f"angle="2.0f"/>
+	</Layout>
+</Level>
