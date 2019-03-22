@@ -6,3 +6,5 @@ Advanced Game Programming final project. C++ Game using Box2d
 
 To be able to build this project, you will need to have DirectX SDK installed on your machine. 
 Then change the Project Properties->VC++ Directories-><b>Include Directories</b> AND <b>Library Directories</b> to match your machine.
+
+To play the game, download AWOL Playable folder and run awol.exe with assets in the same folder.
